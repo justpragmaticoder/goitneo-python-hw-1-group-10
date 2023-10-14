@@ -7,7 +7,7 @@ def get_birthdays_per_week(users):
         return []
 
     today = datetime.today().date()
-    prepared_data = defaultdict(lambda: None)
+    prepared_data = defaultdict(list)
 
     for user in users:
         name = user["name"]
